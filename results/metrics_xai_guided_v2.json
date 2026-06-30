@@ -1,0 +1,69 @@
+{
+  "strategy": "xai_guided",
+  "base_checkpoint": "/home/clebinho/uff/computer_vision/xai_and_fine_tuning/checkpoints/resnet50_xai_guided.pt",
+  "epochs": 3,
+  "lr": 5e-06,
+  "alpha": 2.0,
+  "seed": 42,
+  "max_cam_images": 500,
+  "best_epoch_by_val_auc": 2,
+  "best_val_auc": 0.9963836477987422,
+  "class_weights": [
+    1.9636846780776978,
+    0.6708018183708191
+  ],
+  "overlap_stats": {
+    "n": 500,
+    "mean": 0.369098,
+    "median": 0.365677,
+    "max": 0.635147,
+    "focused": 3,
+    "partial": 471,
+    "distracted": 26
+  },
+  "validation": {
+    "n_samples": 782,
+    "accuracy": 0.9603580562659847,
+    "error_rate": 0.039641943734015306,
+    "accuracy_percent": 96.04,
+    "error_percent": 3.96,
+    "auc_roc": 0.9963836477987422,
+    "f1": 0.9720972097209721,
+    "precision": 0.9981515711645101,
+    "recall": 0.9473684210526315,
+    "confusion_matrix": [
+      [
+        211,
+        1
+      ],
+      [
+        30,
+        540
+      ]
+    ],
+    "split": "validation"
+  },
+  "test": {
+    "n_samples": 624,
+    "accuracy": 0.9006410256410257,
+    "error_rate": 0.09935897435897434,
+    "accuracy_percent": 90.06,
+    "error_percent": 9.94,
+    "auc_roc": 0.965538023230331,
+    "f1": 0.9247572815533981,
+    "precision": 0.8778801843317973,
+    "recall": 0.9769230769230769,
+    "confusion_matrix": [
+      [
+        181,
+        53
+      ],
+      [
+        9,
+        381
+      ]
+    ],
+    "split": "test"
+  },
+  "notes": "XAI-guided fine-tuning: pesos per-sample = 1 + alpha * overlap_score. accuracy_percent = fração de acertos × 100. confusion_matrix sklearn: [[TN, FP], [FN, TP]]."
+}

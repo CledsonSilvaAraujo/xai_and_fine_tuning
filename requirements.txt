@@ -1,0 +1,16 @@
+# Visão computacional — XAI + fine-tuning (Chest X-Ray)
+# Python 3.10+ recomendado
+torch>=2.1.0
+torchvision>=0.16.0
+# Grad-CAM / Grad-CAM++ (import: pytorch_grad_cam)
+grad-cam>=1.4.0
+numpy>=1.24.0
+pandas>=2.0.0
+Pillow>=10.0.0
+tqdm>=4.66.0
+scikit-learn>=1.3.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+opencv-python-headless>=4.8.0
+# Opcional: baixar dataset do Kaggle pela CLI
+kaggle>=1.6.0

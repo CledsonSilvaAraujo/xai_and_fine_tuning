@@ -1,0 +1,63 @@
+{
+  "strategy": "full_finetune",
+  "epochs": 10,
+  "lr": 0.0001,
+  "seed": 42,
+  "data_root": "/home/clebinho/uff/computer_vision/xai_and_fine_tuning/src/data/chest_xray",
+  "checkpoint": "/home/clebinho/uff/computer_vision/xai_and_fine_tuning/checkpoints/resnet50_full_finetune.pt",
+  "best_epoch_by_val_auc": 10,
+  "best_val_auc": 0.9962843429328038,
+  "class_weights": [
+    1.9636846780776978,
+    0.6708018183708191
+  ],
+  "train_class_counts": {
+    "0": 1129,
+    "1": 3305
+  },
+  "validation": {
+    "n_samples": 782,
+    "accuracy": 0.9757033248081841,
+    "error_rate": 0.024296675191815886,
+    "accuracy_percent": 97.57,
+    "error_percent": 2.43,
+    "auc_roc": 0.9962843429328038,
+    "f1": 0.9830810329474622,
+    "precision": 0.9981916817359855,
+    "recall": 0.968421052631579,
+    "confusion_matrix": [
+      [
+        211,
+        1
+      ],
+      [
+        18,
+        552
+      ]
+    ],
+    "split": "validation"
+  },
+  "test": {
+    "n_samples": 624,
+    "accuracy": 0.8653846153846154,
+    "error_rate": 0.13461538461538458,
+    "accuracy_percent": 86.54,
+    "error_percent": 13.46,
+    "auc_roc": 0.9692636423405654,
+    "f1": 0.9018691588785047,
+    "precision": 0.8283261802575107,
+    "recall": 0.9897435897435898,
+    "confusion_matrix": [
+      [
+        154,
+        80
+      ],
+      [
+        4,
+        386
+      ]
+    ],
+    "split": "test"
+  },
+  "notes": "accuracy_percent = fração de acertos × 100; error_percent = fração de erros × 100. confusion_matrix sklearn com classes ordenadas [0,1]: [[TN, FP], [FN, TP]]."
+}

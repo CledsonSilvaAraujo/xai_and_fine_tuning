@@ -301,4 +301,3 @@ roteiro_apresentacao.md   # roteiro de fala
 ## Arquivos ignorados pelo git
 
 O `.gitignore` exclui artefatos gerados automaticamente: apresentações `.pptx`, PDF compilado do LaTeX, pasta `figures/`, overlays Grad-CAM++, logs e pesos CAM intermediários. Os JSONs de métricas e análise de erro permanecem versionados por serem o registro numérico do experimento.
-# xai_and_fine_tuning
